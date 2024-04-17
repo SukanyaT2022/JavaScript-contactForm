@@ -65,3 +65,7 @@ background-color: aqua;
     height: 200px;
     margin: 30px 0;
 }
+#tagetNotFoundText{
+font-size: 30px;
+text-align: center;
+}
