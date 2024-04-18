@@ -23,7 +23,7 @@
 <button onclick="readInfofromTextBox()">Add Contact</button>
 </div>
 
-<!-- pink area -->
+<!-- left side -->
 <div class="holdAllSmallBox">
 <div id="contactList">
 
@@ -49,9 +49,21 @@
   </div>
 
 </div>
+</div>
+<!-- end search box -->
 
+<!-- start update current info section -->
+<div>
+  <h2>Search to update from ID</h2>
+<input type="text" id="updateUserInfo" ><br>
+<input type="radio" value="Address" name="updateValue" id="addressID"/><p>Update Address</p>
+<input type="radio" value="Phone Number" name="updateValue" id="phoneID"/><p>Update Phone Number</p>
+<input type= "text" id="fillNewInfo"/>
+<button onclick="updateUserFunc()">Update</button>
 
 </div>
+
+
 
     
     <script src="index.js"></script>

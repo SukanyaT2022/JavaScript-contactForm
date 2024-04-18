@@ -194,6 +194,22 @@ window.onclick = function(event) {
 function readValueSearchBox(){
 
 }
+// update box
+function updateUserFunc(){
+var updateInfo = document.getElementById('updateUserInfo').value
+for(i=0;i<objArray.length;i++){
+  if(objArray[i].contactID==updateInfo){
+if(document.getElementById('addressID').checked == true){
+objArray[i].address = document.getElementById('fillNewInfo').value//adress line 6
+}else{
+  objArray[i].phone = document.getElementById('fillNewInfo').value//adress line 6
+}
+  }
+}
+displayContact()
+}
+
+
 
 // Object creation: <!DOCTYPE html>
 
