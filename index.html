@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
-</head>
-<body onload="displayContact()">
-  <div class="wrapper">
-<div class="addContact">
-<h2> Add Contact Details</h2>
-<label>ID</label>
-<input type="text" id="readID" />
-<label>First Name</label>
-<input type="text" id="readFirstName" />
-<label>Last Name</label>
-<input type="text" id="readLastName" />
-<label>Address</label>
-<input type="text" id="readAddress" />
-<label>Phone Number</label>
-<input type="text" id="readPhoneNo"/>
-<button onclick="readInfofromTextBox()">Add Contact</button>
-</div>
+  </head>
+  <body onload="displayContact()">
+    <div class="wrapper">
+      <div class="addContact">
+        <h2>Add Contact Details</h2>
+        <label>ID</label>
+        <input type="text" id="readID" />
+        <label>First Name</label>
+        <input type="text" id="readFirstName" />
+        <label>Last Name</label>
+        <input type="text" id="readLastName" />
+        <label>Address</label>
+        <input type="text" id="readAddress" />
+        <label>Phone Number</label>
+        <input type="text" id="readPhoneNo" />
+        <button onclick="readInfofromTextBox()">Add Contact</button>
+      </div>
 
-<!-- left side -->
-<div class="holdAllSmallBox">
-<div id="contactList">
+      <!-- left side -->
+      <div class="holdAllSmallBox">
+        <div id="contactList"></div>
+      </div>
+      <!-- below div for hold 2 left right box -->
+    </div>
 
-</div>
-</div>
-<!-- below div for hold 2 left right box -->
-</div> 
+    <!-- searchbox -->
+    <div class="wrapSearcIDSearchUpdate">
+      <div class="search">
+        <label>ID</label>
+        <input type="text" id="searchID" />
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
 
-<!-- searchbox -->
-<div class="search">
-<label>ID</label>
-<input type="text" id="searchID" />
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        </div>
+      </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+      <!-- end search box -->
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
+      <!-- start update current info section -->
+      <div class="searchUpdate">
+        <h2>Search to update from ID</h2>
+        <input type="text" id="updateUserInfo" /><br />
 
-</div>
-</div>
-<!-- end search box -->
+        <div class="wrapRadioText">
+        <input type="radio" value="Address" name="updateValue" id="addressID" />
+        <p>Update Address</p>
+      </div>
 
-<!-- start update current info section -->
-<div>
-  <h2>Search to update from ID</h2>
-<input type="text" id="updateUserInfo" ><br>
-<input type="radio" value="Address" name="updateValue" id="addressID"/><p>Update Address</p>
-<input type="radio" value="Phone Number" name="updateValue" id="phoneID"/><p>Update Phone Number</p>
-<input type= "text" id="fillNewInfo"/>
-<button onclick="updateUserFunc()">Update</button>
+      <div class="wrapRadioText">
+        <input
+          type="radio"
+          value="Phone Number"
+          name="updateValue"
+          id="phoneID"
+        />
+        <p>Update Phone Number</p>
+      </div>
 
-</div>
-
-
-
-    
+        <input type="text" id="fillNewInfo" placeholder="Type new address or new phone number..." />
+        <button onclick="updateUserFunc()">Update</button>
+      </div>
+    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
