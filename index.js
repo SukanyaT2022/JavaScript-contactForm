@@ -51,14 +51,14 @@ function displayContact() {
 
     //create id
     var p2 = document.createElement('p'); //make paragraph tag
-    var text2 = document.createTextNode('ID:' + objArray[i].contactID);
+    var text2 = document.createTextNode('ID: ' + objArray[i].contactID);
     p2.appendChild(text2); //put text line 29 to paragraph line 28
     div.appendChild(p2); // after that put paragraph on the white box div
 
     //create name last name
     var p1 = document.createElement('p'); //make paragraph tag
     var text = document.createTextNode(
-      'name:' + objArray[i].firstName + ' ' + objArray[i].lastName
+      'name: ' + objArray[i].firstName + ' ' + objArray[i].lastName
     );
     p1.appendChild(text); //put text line 29 to paragraph line 28
     div.appendChild(p1); // after that put paragraph on the white box div
@@ -66,13 +66,13 @@ function displayContact() {
 
     //create address
     var p3 = document.createElement('p'); //make paragraph tag
-    var text3 = document.createTextNode('Address:' + objArray[i].address);
+    var text3 = document.createTextNode('Address: ' + objArray[i].address);
     p3.appendChild(text3); //put text line 29 to paragraph line 28
     div.appendChild(p3); // after that put paragraph on the white box div
 
     //create phone
     var p4 = document.createElement('p'); //make paragraph tag
-    var text4 = document.createTextNode('Phone:' + objArray[i].phone);
+    var text4 = document.createTextNode('Phone: ' + objArray[i].phone);
     p4.appendChild(text4); //put text line 29 to paragraph line 28
     div.appendChild(p4); // after that put paragraph on the white box div
 
